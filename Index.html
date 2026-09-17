@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>CineSearch</title>
 </head>
+
 <body>
-    
+    <div id="container">
+        <h1>Cine<span>Search</span></h1>
+        <p>Bem-vindo ao CineSearch!</p>
+
+        <div id="search">
+            <input type="text" id="searchInput" placeholder="Buscar por título...">
+        </div>
+
+        <div id="buttons">
+            <button class="btn-categoria active">Todos</button>
+            <button class="btn-categoria">Drama</button>
+            <button class="btn-categoria">Ficção</button>
+            <button class="btn-categoria">Suspense</button>
+            <button class="btn-categoria">Animação</button>
+        </div>
+
+        <div class="grid"></div>
+
+        <div id="filmesNaoLoc" style="display: none;">Nenhum filme encontrado com esse nome.</div>
+
+        <div id="detales"></div>
+
+    </div>
 </body>
+
 </html>
